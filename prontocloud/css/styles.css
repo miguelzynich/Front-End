@@ -1,11 +1,11 @@
-
 html {
     font-size: 62.5%;
 }
 
 body {
-    background-color: #f5f5f5; 
+    background-color: #ffffff; 
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
 .main-container {
@@ -16,8 +16,8 @@ body {
 
 .container {
     display: block;
-    float: left;
-    padding: 20px;
+    padding: 16px;
+    width: 75%;
     max-width: 100%;
     margin: 0 auto;
     max-width: 1198px;
@@ -25,17 +25,19 @@ body {
 
 header {
     background: #fff;
-    display: block;
-    float: left;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 140px;
+    padding: 0000;    
     width: 100%;
-    border-bottom: 1px solid #254159;
+    border-bottom: 3px solid #254159;
 }
 
 h1 {
-    font-size: 2.4rem;
+    font-size: 2.0em;
     color: #254159;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 h2 {
@@ -67,22 +69,33 @@ p {
 img {
     max-width: 100%;
     height: auto;
+    min-width: 196px;
+   
 }
 
 #tenho-interesse {
     background-color: #b8c8d6;
     width: 100%;
+    border-top: 3px solid #254159;
+    margin: auto;
 }
 
 #tenho-interesse form,
 .cognito.c-med .c-forms-form,
 .cognito.c-med .c-forms-form div {
-    background-color: #b8c8d6 !important;
+    background-color: #ffffff !important;
+    width: 40%;
+    min-width: 280px;
+    margin: 0, auto;
+    padding: 20px;
+    border-radius: 2px;
+    
 }
 
 #tenho-interesse .cognito .c-forms-form .c-forms-form-title h2,
 #tenho-interesse .cognito label[for], .cognito input[type=radio], .cognito input[type=checkbox] {
     color: #385874;
+
 }
 
 ol {
@@ -92,27 +105,29 @@ ol {
 ol li {
     font-size: 1.4rem;
     color: #454545;
+    line-height: 24px;
 }
 
 section {
-    background-color: #fff;
-    display: block;
-    float: left;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
     font-size: 1.5rem; /* equivalente a 15px */ 
-    padding: 20px;
-    width: 100%;
 }
 
 section nav {
-    display: block;
-    float: left;
-    width: 30%;
-}
+    margin: 0 auto;
+    padding: 10px;
+    width: 60%;
+  }
 
 nav li {
     background-color: #efefef;
     margin: 1px 20px 1px 0;
     padding: 10px;
+
 }
 
 nav li:hover {
@@ -130,16 +145,15 @@ nav a:hover {
 
 section article {
     display: block;
-    float: left;
-    width: 70%;
+    width: 80%;
 }
 
 footer {
     background-color: #254159;  
     display: block;
     float: left;
-    padding: 20px;
     width: 100%;
+    text-align: center;
 }
 
 footer p {
@@ -151,6 +165,7 @@ footer small {
     font-size: 80%;
     display: block;
 }
+
 
 .cognito {
     height: 350px !important;
@@ -166,5 +181,15 @@ footer small {
     .container {
         padding-left: 1%;
         padding-right: 1%;
+    }
+}
+
+@media (max-width: 768px) {
+    section nav {
+        width: 100%;
+    }
+  
+    section article {
+        width: 100%;
     }
 }
