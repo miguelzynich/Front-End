@@ -17,9 +17,6 @@ body {
 .container {
     display: block;
     padding: 16px;
-    width: 75%;
-    max-width: 100%;
-    margin: 0 auto;
     max-width: 1198px;
 }
 
@@ -29,7 +26,7 @@ header {
     justify-content: center;
     align-items: center;
     min-height: 140px;
-    padding: 0000;    
+    padding: 4px;    
     width: 100%;
     border-bottom: 3px solid #254159;
 }
@@ -67,9 +64,11 @@ p {
 }
 
 img {
-    max-width: 100%;
+    display: block;
+    float: center;
     height: auto;
     min-width: 196px;
+    max-width: 100%;
    
 }
 
@@ -84,7 +83,7 @@ img {
 .cognito.c-med .c-forms-form,
 .cognito.c-med .c-forms-form div {
     background-color: #ffffff !important;
-    width: 40%;
+    width: 50%;
     min-width: 280px;
     margin: 0, auto;
     padding: 20px;
@@ -106,6 +105,7 @@ ol li {
     font-size: 1.4rem;
     color: #454545;
     line-height: 24px;
+    max-width: 420px;
 }
 
 section {
@@ -118,9 +118,10 @@ section {
 }
 
 section nav {
+    display: block;
+    float: left;
     margin: 0 auto;
-    padding: 10px;
-    width: 60%;
+    width: 20%;
   }
 
 nav li {
@@ -145,13 +146,14 @@ nav a:hover {
 
 section article {
     display: block;
-    width: 80%;
+    float: right;
+    width: 75%;
+    margin: 0, auto;
 }
 
 footer {
     background-color: #254159;  
     display: block;
-    float: left;
     width: 100%;
     text-align: center;
 }
@@ -179,8 +181,8 @@ footer small {
     }  
 
     .container {
-        padding-left: 1%;
-        padding-right: 1%;
+        padding: 12px;
+        margin: 0, auto;
     }
 }
 
@@ -192,4 +194,6 @@ footer small {
     section article {
         width: 100%;
     }
+
+
 }
