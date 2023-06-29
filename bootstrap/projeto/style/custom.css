@@ -16,5 +16,5 @@ textarea {
 }
 
 .p{
-    padding: $spacer !important;
-}
+    margin: ($spacer * .25) !important;
+  }
