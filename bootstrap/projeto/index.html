@@ -6,79 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
-    <title>Document</title>
+    <title>Portfólio</title>
 </head>
 <body>
+    <header class="d-flex justify-content-center align-items-center border-bottom" style="background-color: #000000;">
+        <div class="d-flex align-items-center link-body-emphasis">
+            <span class="col-xl-8 col-lg-7 col-md-6 col-sm-6 mx-3" style="color: #ffffff;">Portfólio</span>
+        </div>
+   
+        <ul class="nav nav-pills col-xxl-2 col-xl-3 col-lg-3 col-md-4 col-sm-5 col-xs-8 m-3 p-4b color: #000">
+        <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page" style="background-color: #6301be;">Home</a></li>
+        <li class="nav-item"><a href="#projetos" class="nav-link" style="color: #ffffff;">Projetos</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-link" style="color: #ffffff">Contato</a></li>
+    </ul>
 
-    <header>
-        <div class="container">
-            <div class="row">
-        <div class="container">
-            <div class="row align-items-start" style =".d-flex-row margin-top: ;;">
-                <div class="col-8 order-1">
-                    <h2>Logo</h2>
-                    </div>
-                <div class="col-1 order-1">
-                    <p>Home</p>
-                    </div>
-                <div class="col-1 order-2">
-                   <p>Contato</p>
-                    </div>
-                <div class="col-1 order-3">
-                    <p>Sobre</p>        
-                    </div>           
-    </header>
-    
-    <section id="sobre">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 col-sm-12 " style =".d-flex-row justify-conten-center;">
-                    <h2>Sobre nós</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex vero doloribus veniam incidunt reprehenderit. Itaque, culpa? Rerum, excepturi vero hic error aperiam voluptatibus qui ducimus cupiditate quod consequatur blanditiis aut.</p>
-                    <a class="btn btn-lg btn-success float-end">Saiba mais!</a>
-                </div>
-                <div class="col-md-5 col-sm-12">
-                    <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
-                </div>
+</header>
+    <section id="sobre" style= "background-color: #FCD122">
+    <div class="container">
+        <div class="row m-1 p-2">
+            <div class="col-md-7 col-sm-12 d-flex flex-column align-items-stretch justify-content-center mx-auto" style="width: 40%; min-width: 260px; height: 480px; min-height: 330px;">
+                <h1 class="fw-bold" style= "color: #ffffff;">Eu sou o Miguel e esse é o meu portfólio.</h1>
+                <p class="teste" style="color:#ffffff";> Tenho mais de 10 anos de experiência em Design.
+                Inicialmente, cursei Publicidade e Propaganda, mas acabei migrando para a área de UX e UI. Atualmente, atuo como UX Designer há aproximadamente dois anos.</p>
+                <a class="btn btn-lg btn-success col-md-7 col-sm-7 m-3 position-relative bottom-70 end-80" style="background-color: #6301be;">Saiba mais!</a>
+            </div>
+            <div class="col-md-5 col-sm-12">
+                <img src="./images/mac_preview.png" alt="Imagem Exemplo" class="img-fluid fixed m-2 .img-thumbnail" style="min-width: 220px">
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="produtos">
-
-        <div class="container">
+    <section id="projetos" style= "background-color: #080808;">
+        <div class="container col-md-10 col-sm-12 d-flex flex-column align-items-center justify-content-center mx-auto">
+            <h2 style="color: #ffffff;">Projetos</h2>
             <div class="row">
                 <div class="col">
-
-                    <h2>Produtos</h2>
-
+                <div class="col-12 col-md-6 col-lg-4"></div>
                     <div class="card">
-                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <img src="./images/04_02 1.png" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >ver produto</a>
+                            <h5 class="card-title fw-bold">Vortigo</h5>
+                            <p class="card-text">Projeto de redesign no site da Vortigo. </p>
+                            <a class="btn btn-primary float-end m-3" style="background-color: #6301be;" data-bs-toggle="modal" data-bs-target="#modal-1">Ver Projeto</a>
                         </div>
                     </div>
+                </div>
+                    
 
+                    <div class="col-12 col-md-6 col-lg-4">
                     <div class="card">
-                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <img src="./images/Group 322.png" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" href="#produto-2">ver produto</a>
+                            <h5 class="card-title fw-bold">Yuca</h5>
+                            <p class="card-text">Um case de estudos feito no curso da Profissão UX/UI da EBAC.</p>
+                            <a class="btn btn-primary float-end" style="background-color: #6301be;"" href="#produto-2">Ver Projeto</a>
                         </div>
                     </div>
+                    </div>
 
+                    <div class="col-12 col-md-6 col-lg-4">    
                     <div class="card">
-                        <img src="./images/pexels-josh-sorenson-1714208.jpg" alt="Imagem Exemplo" class="img-fluid">
+                        <img src="./images/neon.png" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
-                            <h5 class="card-title">Lorem ipsum dolor</h5>
-                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
-                            <a class="btn btn-primary" href="#produto-3">ver produto</a>
+                            <h5 class="card-title fw-bold">Neon</h5>
+                            <p class="card-text">Mais um case no curso de Figma da EBAC.</p>
+                            <a class="btn btn-primary float-end m-3 mt-3" style="background-color: #6301be;" href="#produto-3">Ver Projeto</a>
                         </div>
                     </div>
+                </div>
                     
                 </div>
             </div>
@@ -87,14 +83,14 @@
     </section>
 
 
-    <section id="contato">
-        <div class="container">
+    <section id="contato" style="background-color: #0D0D0D;">
+        <div class="container d-flex flex-row justify-content-center align-items-center">
             <div class="row">
-                <div class="col-md-6 col-sm-12">
-                    <h2>Contato</h2>
-                    <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
+                <div class="col-md-8 col-sm-3">
+                    <h2 class="fw-bold" style="color: #ffffff;">Contato</h2>
+                    <p class= texto style="color: #ffffff;">Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
                 </div>
-                <div class="col-md-6 col-sm-12">
+                <div class= "col-md-12 col-sm-3 mx-auto" style="width: 60%;">
                     <form class="form">
 
                         <div class="input-group">
@@ -109,7 +105,7 @@
                             <textarea  class="form-control" name="" rows="5"></textarea>
                         </div>
 
-                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                        <button type="submit" class="btn btn-lg btn-success float-end " style="background-color: #6301be">Enviar mensagem</button>
 
                     </form>
 
@@ -118,48 +114,16 @@
         </div>
     </section>
 
-
-
-    <div class="modal fade" id="modal-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Produto 1</h5>
-                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h6>Confira o tamanho e os preços</h6>
-                    <table class="table table-hover table-striped">
-                        <thead>
-                            <tr>
-                                <th>Tamanho</th>
-                                <th>Valor</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>P</td>
-                                <td>R$ 100</td>
-                            </tr>
-                            <tr>
-                                <td>M</td>
-                                <td>R$ 200</td>
-                            </tr>
-                            <tr>
-                                <td>G</td>
-                                <td>R$ 300</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-
-    </div>
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary" style="color: #6301be;">Home</a></li>
+            <li class="nav-item"><a href="#projetos" class="nav-link px-2 text-body-secondary" style="color: #6301be;">Projetos</a></li>
+            <li class="nav-item"><a href="#contato" class="nav-link px-2 text-body-secondary" style="color: #6301be;">Contato</a></li>
+            </ul>
+          <p class="text-center text-body-secondary">© 2023 - Miguel Zynich</p>
+        </footer>
+      </div>
 
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
