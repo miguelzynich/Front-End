@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header class="d-flex justify-content-center align-items-center border-bottom" style="background-color: #000000;">
+        <div class="d-flex align-items-center link-body-emphasis">
+            <span class="col-xl-8 col-lg-7 col-md-6 col-sm-6 mx-3" style="color: #ffffff;">Portfólio</span>
+        </div>
+   
+        <ul class="nav nav-pills col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-3 m-3 p-4b color: #000">
+        <li class="nav-item"><a href="./index.html" style="color: #ffffff" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="./index.html" class="nav-link" style="color: #ffffff;">Projetos</a></li>
+        <li class="nav-item"><a href="./cadastro.html" class="nav-link active" aria-current="page" style= "background-color: #6301be; color:#ffffff;">Orçamento</a></li>
+        <li class="nav-item"><a href="./index.html" class="nav-link" style="color: #ffffff">Contato</a></li>
+    </ul>
+</header>
+<body style="background-color: #080808;">
+    <section id="cadastro" style="color: #ffffff">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h2>Cadastro</h2>
+                    <p>Faça seu cadastro para receber nossos produtos em sua casa</p>
+                </div>
+            </div>
+
+            <form class="form">
+                    <div class="row">
+                    <div class="col">
+                        <div class="input-group">
+                            <input class="form-control" type="text" name="nome" placeholder="Digite seu nome" required pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s]+">
+                        </div>
+                    </div>
+                   
+
+                    <div class="col">
+                        <div class="input-group">
+                            <input class="form-control" type="email" name="email" placeholder="Digite seu email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="telefone" class="col-form-label col-form-label-sm">Telefone</label>
+                        <input type="text" id="telefone" class="form-control" placeholder="Telefone" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="endereco" class="col-form-label col-form-label-sm">Endereço completo</label>
+                        <input type="text" id="endereco" class="form-control" placeholder="Endereço completo" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="complemento" class="col-form-label col-form-label-sm">Complemento</label>
+                        <input type="text" id="complemento" class="form-control" placeholder="Digite o complemento" >
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <label for="cidade" class="col-form-label col-form-label-sm">Cidade</label>
+                        <input type="text" name="cidade" placeholder="Digite a sua Cidade" id="cidade" class="form-control" required>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <label for="bairro" class="col-form-label col-form-label-sm">Bairro</label>
+                            <input type="text" name="cidade" placeholder="Digite o seu Bairro" id="Bairro" class="form-control" required>
+                        </div>
+
+                    <div class="col">
+                        <label for="estado" class="col-form-label col-form-label-sm">Estado</label>
+                        <select name="estado"  id="estado"  class="form-control">
+                            <option value="">Selecione um estado</option>
+                            <option value="sp">SP</option>
+                            <option value="al">AL</option>
+                            <option value="mg">MG</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="cep"  class="col-form-label col-form-label-sm">CEP</label>
+                        <input type="text" name="cep" placeholder="Digite o seu CEP" id="cep" class="form-control" required pattern="[0-9]{5}-?[0-9]{3}">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col">
+                           <label for="info" class="col-form-label col-form-label-sm">Informações</label>
+                           <textarea class="form-control" name="informacoes" placeholder="Insira o seu texto aqui" id="info" rows="6" required></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 d-flex justify-content-center">
+                        <div class="form-check">
+                            <input type="checkbox" name="promocionais" id="promocionais">
+                            <label for="promocionais" class="form-check-label col-form-label-m">Aceito receber mensagens promocionais</label>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+
+            <div class="row">
+                <div class="col-md-12">
+                <div class="promo w-100 mb-3 d-flex justify-content-center">
+            <p> <a href="#cadastro" class="toggle_cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Cadastre-se</a> para receber
+                novidades.</p>
+            </div>
+            </div>
+           
+            <div class="row">
+            <div class="col-md-12">
+            <button type="submit" class="btn btn-lg btn-success float-end m-2">Realizar cadastro</button>
+            </div>
+            </div>
+    </section>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inscrever-me na lista</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Preencha os campos para receber novidades e promoções</h6>
+
+                    <form class="form-inline">
+                        <div class="row">
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" name="nome"
+                                    placeholder="nome" required>
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" class="form-control form-control-sm mb-2" name="e-mail"
+                                    placeholder="e-mail" required>
+                            </div>
+                            <div class="form-group col-4">
+                                <button type="submit" class="btn btn-sm btn-success">receber novidades</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary mb-2" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#home" class="nav-link px-2 text-body-secondary" style="color: #ffffff;">Home</a></li>
+        <li class="nav-item"><a href="#projetos" class="nav-link px-2 text-body-secondary" style="color: #ffffff;">Projetos</a></li>
+        <li class="nav-item"><a href="./cadastro.html" class="nav-link px-2 text-body-secondary" style="color: #ffffff;">Orçamentos</a></li>
+        <li class="nav-item"><a href="#contato" class="nav-link px-2 text-body-secondary" style="color: #ffffff;">Contato</a></li>
+        </ul>
+      <p class="text-center text-body-secondary" style="color: #ffffff">© 2023 - Miguel Zynich</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

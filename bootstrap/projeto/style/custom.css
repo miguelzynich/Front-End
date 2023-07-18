@@ -5,8 +5,8 @@
   }
 
 section {
-    padding-bottom: 5%;
-    padding-top: 4%;
+    padding-bottom: 3%;
+    padding-top: 3%;
 }
 
 input,
@@ -18,3 +18,31 @@ textarea {
     margin: 10px;
     height: 95%;
 }
+
+.carousel {
+    overflow: hidden;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  section#carousel {
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+@media (min-width: 992px) {
+    section#carousel {
+      height: 600px; /* Defina a altura desejada para desktop */
+      overflow: hidden; /* Oculta o conteúdo que exceder a altura */
+    }
+  }
